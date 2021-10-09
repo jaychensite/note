@@ -72,7 +72,7 @@ void afterNodeInsertion(boolean evict) { }
 void afterNodeRemoval(Node<K,V> p) { }
 ```
 
-#### LinkedHashMap实现URL算法
+#### LinkedHashMap实现lru算法
 利用LinkedHashMap实现URL算法主要是通过afterNodeAccess方法实现。
 accessOrder为true时才会执行。
 
